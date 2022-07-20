@@ -231,7 +231,6 @@ footer {
     grid-template-columns: repeat(1, 1fr) !important;
   }
 
-  footer,
   .footer-container {
     width: 100%;
   }
@@ -279,10 +278,22 @@ footer {
   }
 
   .footer-container {
-    width: 100%;
+    width: 95%;
+  }
+  .footer-menu {
+    width: 80%;
+    margin: auto;
+  }
+
+  .footer-menu a {
+    font-size: 23px;
+    display: inline-block;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {
-} */
+@media only screen and (min-width: 777px) and (max-width: 1340px) {
+  body {
+    width: 166%;
+  }
+}
