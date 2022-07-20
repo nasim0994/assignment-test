@@ -171,6 +171,49 @@ footer {
   padding: 10px 26px;
   color: #b9b9b9;
 }
+
+/* ------------------upcoming match page style--------------- */
+.matchs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 24px;
+  column-gap: 24px;
+}
+.country-flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.country-flag img {
+  width: 94px;
+  height: 56px;
+}
+
+.country-flag p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+article.match {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 40px 15px;
+  border-radius: 5px;
+}
+
+h3.country-name {
+  font-size: 20px;
+  color: #161616;
+}
+
+p.match-date {
+  color: #4d4d4d;
+  margin-top: 5px;
+}
+
 /* ---------------respopnsive style-------------- */
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -238,6 +281,12 @@ footer {
   .footer-menu a {
     display: block;
   }
+  /* upcoming match page  */
+  .matchs {
+    grid-template-columns: repeat(1, 1fr);
+    width: 95%;
+    margin: auto;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -289,8 +338,14 @@ footer {
     font-size: 23px;
     display: inline-block;
   }
-}
 
+  /* upcoming match page  */
+  .matchs {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    margin: auto;
+  }
+}
 /* // Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 777px) and (max-width: 1340px) {
   body {
